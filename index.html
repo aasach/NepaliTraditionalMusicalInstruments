@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musical Instruments</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+@media screen and max-width(600px){
+width:100%;
+}
+body {
+    font-family: Cursive, sans-serif;
+    background-color:#FFF5E1;
+    text-align:center;
+
+}
+header nav ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #FF7D29;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 120px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+
+.container {
+    max-width: 80%; 
+    margin: 20px auto;
+    display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+}
+
+.card {
+	color: black;
+    background-color: white;
+    border-radius:80px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);   
+	transition: transform 0.2s, box-shadow 0.3s;
+	overflow:hidden;
+	width: 300px; 
+    height: 300px; 
+  
+    
+    
+	
+	
+}
+
+	.card:hover {
+	transform: scale(1.05);
+	box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+   
+}
+
+.image {
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+.image-1 { 
+background-image: url('OIP.jpg'); 
+}
+.image-2 { 
+background-image: url('1262549.jpg'); 
+}
+.image-3 {
+ background-image: url('R.jpg');
+ }
+.image-4 { 
+background-image: url('madal.jpg'); 
+}
+.image-5 {
+ background-image: url('marchunga and binayo.jpg'); 
+ }
+.image-6 { 
+background-image: url('dhimay.jpg');
+ }
+.image-7 {
+ background-image: url('jhyali.jpg'); 
+ }
+.image-8 { 
+background-image: url('tungna.jpg'); 
+}
+.image-9 {
+ background-image: url('khainjadi.jpg');
+ }
+.image-10 {
+ background-image: url('dhyangro.jpg'); 
+ }
+.image-11 {
+ background-image: url('pungi.webp'); 
+ }
+.image-12 { 
+background-image: url('sankha.webp'); 
+}
+.image-13 { 
+background-image: url('tyamko.jpg'); 
+}
+.image-14 { 
+background-image: url('narasingha.jpg'); 
+}
+.image-15 {
+ background-image: url('sahanai.jpg'); 
+ }
+ 
+ .image-container {
+ position:relative;
+    width: 100%;
+	max-height:50%;
+	text-align: center;
+	margin: 0; 
+    padding: 0;
+	
+}
+
+ .image-container img{
+  width: 80%; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
+    max-width: 100%; 
+    max-height: 650px;
+ 
+  }
+  
+  .image-text {  
+	font-family: Cursive;
+    position: absolute;
+    top: 50%;
+    left: 42%;
+	max-width:90%;
+    transform: translate(-50%, -50%);	
+    padding: 0px;
+	margin:0px;
+    text-align: left;
+	color:#DC5F00;
+}
+
+	.image-text h2 {	
+    font-size: 50px;
+    margin-bottom: 10px;
+	
+	
+}
+
+	.intro-text h1 {
+	color:#DC5F00;
+	
+}
+
+	.intro-text p{
+	color:black;
+padding:20px;
+margin:0 80px;
+	
+	
+}
+	.image-text p {	
+    font-size: 20px;
+	color:white;
+	
+	text-align: left;
+   
+}
+  
+h1 {
+    font-size: 38px;
+    margin: 10px;
+    color: #333;
+	text-align: center;
+}
+
+
+.card-description {
+    padding: 10px;
+}
+
+.card h1{
+font-size: 18px;
+
+}
+
+.card-description p {
+    font-size: 12px;
+    color: #666;
+}
+
+.Video-class h1{
+color:#DC5F00;
+}
+
+ #about h1 {
+  color:#DC5F00; 
+        }
+
+ #categories h1 {
+  color:#DC5F00;
+        }
+
+ #contact h1 {
+  color: #DC5F00; 
+        }
+#about p{
+ color:black;
+padding:20px;
+margin:0 80px;
+}
+
+#categories p{
+ color:black;
+padding:20px;
+margin:0 80px;
+}
+#contact p{
+ color:black;
+padding:20px;
+margin:0 80px;
+}
+
+footer {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #FF7D29;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-column {
+            width: 45%;
+        }
+.footer-column ul {
+            list-style-type: none; 
+            padding: 0;
+        }
+
+ .footer-column ul li {
+            margin-bottom: 10px;
+        }
+.footer-column form input[type="email"] {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+
+ .footer-column form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+        }
+
+
+</style>
+<body>
+    <header>
+        <nav>		
+            <ul>
+            <img src="logo.jpg" alt="Logo" class="logo" height:"50px" width="50px">
+			
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+	
+	 <section id="home">
+	<div class="image-container">
+	<img src="vBLlmsz.jpg">
+	<div class="image-text">
+        <h2>Traditional Musical Instruments of Nepal</h2>		
+        <h3>Enjoy the greatest melodies in Nepal</h3>
+		<br><br>
+    </div>
+	</div>
+	</section>
+	<br><br>
+	<section id="about">
+        <h1>About Us</h1>
+        <p>Welcome to our Musical Instruments website, dedicated to showcasing the rich heritage of traditional Nepali 
+		musical instruments. Our mission is to preserve and promote the unique sounds and cultural significance of these 
+		instruments, which have been an integral part of Nepal's musical tradition for centuries. Whether you're a musician, 
+		a music enthusiast, or someone interested in cultural heritage, our website offers a comprehensive guides to varieties of instruments.</p>
+	</section>
+	<div class="intro-text">
+	<h1>Introduction to Nepali Musical Instruments</h1>
+	
+	<p>From temple bells to drum wedding processions; to the cacophonous and woodblock khukuri holders; 
+	to the dream-like sitar and bone trumpets mourning the dead, 
+	Nepal has a wealth of traditional musical instruments that are still a part of people everyday lives.<br><br>
+	Many Nepali folk instruments or lokabaja (नेपाली लोकबाजा) date back into prehistory or inaccessible history. 
+	General histories of musical instruments, such as History of Musical Instruments by Kurt Sachs, have little to say directly about Nepal. 
+	Sachs focused two chapters on India, and when addressing the ranasrnga, on Northern India. 
+	The musical instruments in Nepal are used for different purposes; some are used for folk music, some in Nepali classical music, 
+	some for religious ceremonies and some for specific events such as marriage, jatras, festivals and many more.<br><br>
+	The musical instruments in Nepal remind about the commitment of people towards a musical and spiritual life, 
+	signs of creativity and originality and showcasing connections between different cultures.<br><br>
+	There are hundreds of Nepali musical instruments and they are not standardized. When considering seemingly identical instruments,
+	the languages, region of origin, musician's ethnicity and local traditions may affect the instrument's identity and 
+	how it is played.</p>
+<br>	
+	</div>
+	<section id="categories">
+        <h1>Our Categories</h1>
+        <p>We offer a range of services to help you explore and appreciate the rich heritage of Nepali musical instruments. Our services include educational workshops, live performances, instrument rentals, and more. Whether you're a musician looking to expand your repertoire or someone interested in cultural heritage, we have something for everyone.</p>
+    
+	
+    <div class="container">
+	
+        <a href="https://aasach.github.io/panchebaja/" class="card">
+            <div class="image image-1"></div>
+            <h1>Panche Baja</h1>
+        </a>
+        <a href="https://aasach.github.io/bansuri/" class="card">
+            <div class="image image-2"></div>
+            <h1>Bansuri</h1>
+        </a>
+        <a href="https://aasach.github.io/sarangii/" class="card">
+            <div class="image image-3"></div>
+            <h1>Sarangi</h1>
+        </a>
+        <a href="https://aasach.github.io/madal/" class="card">
+            <div class="image image-4"></div>
+            <h1>Madal</h1>
+        </a>
+        <a href="https://aasach.github.io/murchunga/" class="card">
+            <div class="image image-5"></div>
+            <h1>Murchunga</h1>
+        </a>
+        <a href="https://aasach.github.io/dhimmey/" class="card">
+            <div class="image image-6"></div>
+            <h1>Dhimay</h1>
+        </a>
+        <a href="https://aasach.github.io/jhyali/" class="card">
+            <div class="image image-7"></div>
+            <h1>Jhyali</h1>
+        </a>
+        <a href="https://aasach.github.io/tungna/" class="card">
+            <div class="image image-8"></div>
+            <h1>Tungna</h1>
+        </a>
+        <a href="https://aasach.github.io/khainjadi/" class="card">
+            <div class="image image-9"></div>
+            <h1>Khainjadi (A tambourine)</h1>
+        </a>
+        <a href="https://aasach.github.io/dhyangro/" class="card">
+            <div class="image image-10"></div>
+            <h1>Dhyangro</h1>
+        </a>
+        <a href="https://aasach.github.io/pungi/" class="card">
+            <div class="image image-11"></div>
+            <h1>Pungi</h1>
+        </a>
+        <a href="https://aasach.github.io/sankha/" class="card">
+            <div class="image image-12"></div>
+            <h1>Sankha</h1>
+        </a>
+        <a href="https://aasach.github.io/tyamko/" class="card">
+            <div class="image image-13"></div>
+            <h1>Tyamko</h1>
+        </a>
+        <a href="https://aasach.github.io/narasimha/" class="card">
+            <div class="image image-14"></div>
+            <h1>Narasingha</h1>
+        </a>
+        <a href="https://aasach.github.io/sahanai/" class="card">
+            <div class="image image-15"></div>
+            <h1>Sahanai</h1>
+        </a>
+    </div>
+    </section>   
+	
+	<br>
+	<br>
+	<div class="Video-class">
+	<h1> Live performances</h1><br><br>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/4VvqIq3zMy4?si=_Qdp2f93APXuGovE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/Ei7PIVHuK14?si=InEBRj7PoBnjrEbV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+	<br>
+	<br>
+	<section id="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions, comments, or would like to learn more about our offerings, please feel free to reach out to us. 
+	<footer>
+        <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#categories">Our Categories</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+			
+           
+        </div>
+		<br>
+        <div class="footer-column">
+            <h3>Contact Information</h3>
+            <p>Email: info@nepalimusic.com</p>
+            <p>Phone: (123) 456-7890</p>
+			 <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
